@@ -17,7 +17,7 @@ versioned and visible.
 | File | What it is | When you touch it |
 |---|---|---|
 | `README.md` | This guide: the loop, the rhythm, the AI rules | Read once, re-read monthly |
-| `learn.md` | The ordered video roadmap + your notes in your own words | After every video |
+| `learn.md` | The ordered video roadmap + status tracking (notes live in my paper notebook) | After every video |
 | `practice.md` | Hands-on labs mapped to each level, with real-world scenarios | Every week |
 | `drills.md` | One small hands-on drill per concept (20–60 min) + a re-drill schedule so you never forget | Day 0, 1, 7, 30, 90 after each concept |
 | `CLAUDE.md` | Context and rules for AI coding tools working in this repo (copy it as `AGENTS.md` too) | When you start, then when rules change |
@@ -71,7 +71,7 @@ system-design-lab/
  └──────────┘   └──────────┘   └──────────┘   └──────────┘
 ```
 
-1. **Learn** — Watch the video(s). Write notes in `learn.md` in **your own words**, max one screen per video. No copy-paste, no AI summaries.
+1. **Learn** — Watch the video(s). Take notes **by hand in my paper notebook**, in **your own words**, with diagrams. End every video's page with a small box: *the trade-off* (gives me ___, costs me ___) and *when I would NOT use this*. No copy-paste, no AI summaries. Then update the status column in `learn.md`.
 2. **Predict** — Before touching code, write a hypothesis *with numbers* in `practice.md`.
    Example: "Adding Redis cache-aside will drop p95 read latency from ~40 ms to under 10 ms, and DB CPU by at least 50%."
 3. **Build** — The smallest setup that can test the hypothesis (Docker Compose is enough for almost everything).
@@ -79,7 +79,7 @@ system-design-lab/
 5. **Measure** — p50 / p95 / p99 latency, throughput, error rate, replication lag, CPU/memory. Save the numbers in `RESULTS.md`.
 6. **Reflect** — Compare prediction vs. reality. *Why* were you wrong? This step is where most of the learning happens.
 7. **Teach** — Explain it in 5 sentences or one diagram (a LinkedIn post, a note to a colleague, or a voice memo). If you can't explain it simply, go back to step 1.
-8. **Recall** — Re-answer 3 questions about the topic **without notes** after 1 day, 1 week, and 1 month. Tick the boxes in `learn.md`.
+8. **Recall** — Re-answer 3 questions about the topic **without notes** after 1 day, 1 week, and 1 month (or answer Claude's check-in questions). Tick the recall boxes on the notebook page; mark 🔁 in `learn.md` after the third recall.
    Even better: **re-do the concept's drill** from `drills.md` (Day 30 = rebuild it from an empty folder, no notes, no AI).
 
 ---
@@ -88,7 +88,7 @@ system-design-lab/
 
 | Day | Time | Activity |
 |---|---|---|
-| Saturday | 2 h | Learn: watch + notes |
+| Saturday | 2 h | Learn: watch + notebook notes |
 | Sunday | 2 h | Predict + Build |
 | Tuesday | 1.5 h | Break + Measure |
 | Thursday | 1 h | Reflect + Teach + write ADR |
@@ -142,7 +142,7 @@ and you own the consequences.
 | ✅ Good use | ❌ Avoid |
 |---|---|
 | Mock system-design interviewer | Asking for the answer before you've tried |
-| Critic of *your* design doc or ADR | Letting AI write your `learn.md` notes |
+| Critic of *your* design doc or ADR | Letting AI write your notes |
 | Scaffolding Docker Compose / k6 scripts **after** you designed the experiment | Letting the agent choose the architecture |
 | Explaining an error or a config option | Pasting results you don't understand |
 | Generating recall quizzes from your own notes | Skipping the "Break" and "Measure" steps |

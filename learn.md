@@ -7,25 +7,28 @@ Theory source: **Ahmed Elemam – أحمد الإمام** YouTube channel
 
 ## Status legend
 
-`⬜` not started · `👀` watched · `📝` notes written · `🧪` lab done · `🔁` recalled 3 times
+`⬜` not started · `👀` watched + notebook notes · `📝` trade-off box written · `🧪` lab done · `🔁` recalled 3 times
 
 A video only reaches 🧪 when its linked lab in `practice.md` has a `RESULTS.md`.
 
 ---
 
-## Note template (copy for each video)
+## Notes live in my paper notebook
 
-```markdown
-### #NN — <video title>
-- Date watched:
-- Core idea in my own words (max 3 sentences):
-- The trade-off: ___ gives me ___ but costs me ___
-- When I would NOT use this:
-- Where I've seen this at work / in a real product:
-- One question I still have:
-- Linked lab: practice.md → Lab N
-- Recall: 1 day [ ]  1 week [ ]  1 month [ ]
+I take notes **by hand, with diagrams**, in my own words. This file only tracks status.
+At the end of every video's notebook page, I draw this box:
+
 ```
+┌─────────────────────────────────────────────────┐
+│ #NN  <short title>              Date: ____       │
+│ Trade-off: ___ gives me ___ but costs me ___     │
+│ When I would NOT use this: ___                   │
+│ Recall: 1 day [ ]  1 week [ ]  1 month [ ]       │
+└─────────────────────────────────────────────────┘
+```
+
+Claude can't see the notebook, so after each video it asks me 2–3 short questions
+to answer from memory. (Optional: upload a photo of a page for feedback.)
 
 ---
 
@@ -34,8 +37,8 @@ A video only reaches 🧪 when its linked lab in `practice.md` has a `RESULTS.md
 ### Level 1 — Basics (System Design بالعربي)
 | # | Video | Length | Lab | Status |
 |---|---|---|---|---|
-| 1 | Scale your application from zero to millions of users – part 1 | 7m | Lab 1 | ⬜ |
-| 2 | Scale your application … – part 2 | 5m | Lab 1 | ⬜ |
+| 1 | Scale your application from zero to millions of users – part 1 | 7m | Lab 1 | 👀 |
+| 2 | Scale your application … – part 2 | 5m | Lab 1 | 👀 |
 | 3 | Scale your application … – part 3 | 6m | Lab 1 | ⬜ |
 | 4 | Scale your application … – part 4 | 3m | Lab 1 | ⬜ |
 | 5 | System Design fundamentals – تيك بودكاست | 1h09 | Lab 0 | ⬜ |
@@ -165,4 +168,4 @@ Each concept has a hands-on drill in `drills.md` (D1–D30). Do the drill, then 
 
 ## My notes
 
-<!-- Paste the note template above for each video, newest at the bottom. -->
+In my paper notebook (see "Notes live in my paper notebook" above).
